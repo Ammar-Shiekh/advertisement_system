@@ -30,7 +30,7 @@ class DevicesAuthController extends Controller
 
         $token = $device->createToken('DeviceToken')->accessToken;
 
-        return response()->json(['token' => $token], 200);
+        return response()->json(['id' => $device->id, 'token' => $token], 200);
     }
 
 

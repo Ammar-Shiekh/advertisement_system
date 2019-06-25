@@ -19,7 +19,7 @@ Route::post('register', 'DevicesAuthController@register');
 
 Route::middleware('auth:api')->group(function () {
     Route::prefix('advertisements')->group(function () {
-        Route::get('/request', 'AdvertisementsController@getDeviceAdvertisements')
+        Route::post('/request', 'AdvertisementsController@getDeviceAdvertisements')
             ->name('advertisements.getDeviceAdvertisements');
     });
 });
