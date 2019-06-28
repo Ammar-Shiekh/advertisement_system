@@ -15,18 +15,18 @@ class AdvertisementUpdated implements ShouldBroadcast
     use Dispatchable, InteractsWithSockets, SerializesModels;
 
     private $device_id;
-    public $advertisement_id;
+    public $advertisement;
 
     /**
      * Create a new event instance.
      *
      * @param $device_id
-     * @param $advertisement_id
+     * @param $advertisement
      */
-    public function __construct($device_id, $advertisement_id)
+    public function __construct($device_id, $advertisement)
     {
         $this->device_id = $device_id;
-        $this->advertisement_id = $advertisement_id;
+        $this->advertisement = $advertisement;
     }
 
     /**

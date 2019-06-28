@@ -188,7 +188,7 @@ class AdvertisementsController extends Controller
             ->map(function($advertisement) {
                 return [
                     'id' => $advertisement->id,
-                    'img_url' => PhotosHelper::getPhotoURL('advertisement', $advertisement->id),
+                    'image_url' => PhotosHelper::getPhotoURL('advertisement', $advertisement->id),
                     'duration' => $advertisement->duration,
                 ];
             });
