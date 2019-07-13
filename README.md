@@ -35,4 +35,4 @@ A system for controlling advertisements on multiple screens by multiple authoriz
 
 ## Clients
 
-1. [Java Pusher Client](#)
+1. [Java Pusher Client](https://github.com/Ammar-Shiekh/advertisement_system_java_client)
